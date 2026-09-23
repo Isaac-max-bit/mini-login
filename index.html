@@ -1,41 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini-login</title>
-    <!-- Asegúrate de que el archivo se llame styles.css o cambia esto si usas style.css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <header>
         <h1>La mini-practica</h1>
     </header>
 
-    <!-- Aquí es el formulario del login, que requiere usuario y contraseña -->
     <main>
         <form id="formlogin">
             <h2>Bienvenido</h2>
 
             <div class="campo">
                 <label for="inputUsuario">Usuario:</label>
-                <input type="text" id="inputUsuario" placeholder="Ingrese su usuario" required>
+                <input type="text" id="inputUsuario" placeholder="Ingrese su usuario" autocomplete="off" required />
             </div>
 
             <div class="campo">
                 <label for="inputPassword">Contraseña:</label>
-                <input type="password" id="inputPassword" placeholder="Ingrese su contraseña" required>
+                <input type="password" id="inputPassword" placeholder="Ingrese su contraseña"
+                    autocomplete="new-password" required />
             </div>
 
             <button type="submit">Darle clic</button>
+
+            <!-- Aquí aparecerán los mensajes en pantalla -->
+            <div id="mensaje" style="margin-top: 15px; font-weight: bold; text-align: center"></div>
         </form>
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Mini-guion. Todos los derechos reservados.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
