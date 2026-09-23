@@ -1,9 +1,9 @@
-/*1. selector de etiqueta: Afecta a toda la página */
+/* 1. Selector de etiqueta: Afecta a toda la página (el body) */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
-    /* Usamos Flexbox para centrar todo vertical y horizontalmente */
+    /* Usamos Flexbox para centrar todo vertical y horizontalmente en la pantalla */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
     height: 100vh;
 }
 
-/* 2. Selector de clase: Da estilo a las cajitas de lo campos */
+/* 2. Selector de clase: Da estilo a las cajitas de los campos de texto */
 .campo {
     display: flex;
     flex-direction: column;
@@ -19,25 +19,26 @@ body {
     text-align: left;
 }
 
-/*3. Selector de ID: Personaliza especificamente nuestro formulario */
-#formLogin{
+/* 3. Selector de ID: Personaliza específicamente nuestro formulario */
+#formlogin {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
-/* Estilos generales para inputs y botón */
+/* Estilos generales para los inputs y el botón */
 input, button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Para que el padding no rompa el ancho */ 
+    box-sizing: border-box; /* Para que el padding no rompa el ancho total */
 }
 
+/* Estilos específicos para el botón */
 button {
     background-color: #007bff;
     color: white;
@@ -47,6 +48,7 @@ button {
     transition: background 0.3s;
 }
 
+/* Pseudo-clase hover: Cambia de color cuando pasas el mouse por encima */
 button:hover {
     background-color: #0056b3;
 }
